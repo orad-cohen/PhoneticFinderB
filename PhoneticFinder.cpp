@@ -27,8 +27,8 @@ bool isSwitched(char a, char b){
     options['z' - 97]['s' - 97] = 1;
     options['d' - 97]['t' - 97] = 1;
     options['t' - 97]['d' - 97] = 1;
-    options['o' - 97]['o' - 97] = 1;
-    options['v' - 97]['v' - 97] = 1;
+    options['o' - 97]['u' - 97] = 1;
+    options['u' - 97]['o' - 97] = 1;
     options['i' - 97]['y' - 97] = 1;
     options['y' - 97]['i' - 97] = 1;
     options['b' - 97]['p' - 97] = 1;
@@ -69,15 +69,15 @@ string find(string text, string word)
     string tempword;
     while(stream >> tempword){        
         
-        for (int i = 0; i < word.length()||i<tempword.length(); i++)
+        for (int i = 0; i < word.length()+1||i<tempword.length()+1; i++)
         {
-            if (word.length() == tempword.length() && i + 1 == word.length())
+            if (word.length() == tempword.length() && i == word.length())
             {
 
                 return tempword;
             }
             if(isSwitched(tempword[i],word[i])){
-                //std::cout << "Checked" << endl;
+            
                 continue;
             }
             

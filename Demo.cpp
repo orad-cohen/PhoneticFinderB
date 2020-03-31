@@ -11,17 +11,10 @@
 
 using namespace std;
 
-int main() {	
-	string text = "Dond vorri be haffy";
-	cout << phonetic::find(text, "dont") << endl;   // should print "Dond"
-	cout << phonetic::find(text, "worry") << endl;   // should print "vorri"
-	cout << phonetic::find(text, "happy") << endl;	 // should print "haffy"
-	cout << phonetic::find(text, "Be") << endl;   // should print "be"
+int main() {
+	string text1 = "xxx abcdefghijklmnopqrstuvwxyZ yyy";
+	cout << "first" << endl;
+	cout << phonetic::find(text1, "abcdefghijklmnopqrstuvwxyz") << endl; // should print "Dond"
+	cout << phonetic::find(text1, "abcdefghijklmnoiqrstuvwxyz") << endl;   // should print "vorri"
 	
-	try {
-		
-		cout << phonetic::find(text, "happ") << endl;   // should throw an exception - "happ" is not a full word in the sentence
-	} catch (exception& ex) {
-	 	cout << "   caught exception: " << ex.what() << endl;  // should print "Did not find the word 'happ' in the text"
-	}
 }
