@@ -62,7 +62,7 @@ string find(string text, string word)
    
     if (word.length() == 0 || !wordstream)
     {
-        stream.str("");
+        wordstream.str("");
         throw std::invalid_argument("Invalid word");
        
     }
