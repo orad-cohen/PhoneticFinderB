@@ -73,7 +73,7 @@ string find(string text, string word)
         {
             if (word.length() == tempword.length() && i == word.length())
             {
-
+                stream.str("");
                 return tempword;
             }
             if(isSwitched(tempword[i],word[i])){
