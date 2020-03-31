@@ -62,7 +62,7 @@ string find(string text, string word)
    
     if (word.length() == 0 || !wordstream)
     {
-       
+        stream.str("");
         throw std::invalid_argument("Invalid word");
        
     }
@@ -95,6 +95,6 @@ string find(string text, string word)
 
     }
     
-    stream.str("");
+    
     throw std::invalid_argument("Word isnt found in the text");
 }}
