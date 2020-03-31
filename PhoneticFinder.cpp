@@ -62,7 +62,7 @@ string find(string text, string word)
    
     if (word.length() == 0 || !wordstream)
     {
-        wordstream.str("");
+       
         throw std::invalid_argument("Invalid word");
        
     }
@@ -74,7 +74,7 @@ string find(string text, string word)
         {
             if (word.length() == tempword.length() && i == word.length())
             {
-                stream.str("");
+                
                 return tempword;
             }
             if(isSwitched(tempword[i],word[i])){
