@@ -714,7 +714,7 @@ TEST_CASE("word not found on the text throw")
     CHECK_THROWS(find(text1, "abcdefghijklmnoptrstuvwxyz"));
     CHECK_THROWS(find(text1, "abcdefghijklmnopurstuvwxyz"));
     CHECK_THROWS(find(text1, "abcdefghijklmnopvrstuvwxyz"));
-    //CHECK_THROWS(find(text1, "abcdefghijklmnopwrstuvwxyz"));
+    CHECK_THROWS(find(text1, "abcdefghijklmnopwrstuvwxyz"));
     CHECK_THROWS(find(text1, "abcdefghijklmnopxrstuvwxyz"));
     CHECK_THROWS(find(text1, "abcdefghijklmnopyrstuvwxyz"));
     CHECK_THROWS(find(text1, "abcdefghijklmnopzrstuvwxyz"));
@@ -724,7 +724,7 @@ TEST_CASE("word not found on the text throw")
     CHECK_THROWS(find(text1, "abcdefghijklmnoeqrstuvwxyz"));
     CHECK_THROWS(find(text1, "abcdefghijklmnogqrstuvwxyz"));
     CHECK_THROWS(find(text1, "abcdefghijklmnohqrstuvwxyz"));
-    //CHECK_THROWS(find(text1, "abcdefghijklmnoiqrstuvwxyz"));
+    CHECK_THROWS(find(text1, "abcdefghijklmnoiqrstuvwxyz"));
     CHECK_THROWS(find(text1, "abcdefghijklmnojqrstuvwxyz"));
     CHECK_THROWS(find(text1, "abcdefghijklmnokqrstuvwxyz"));
     CHECK_THROWS(find(text1, "abcdefghijklmnolqrstuvwxyz"));
